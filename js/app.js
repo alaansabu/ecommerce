@@ -100,12 +100,18 @@ if (selectedProduct) {
 const notify = document.querySelector(".notifi")
 const addToCart =  document.querySelector(".submit");
 
-addToCart.addEventListener("click",()=>{
+// Add the product to the cart when the "Add to Cart" button is clicked
+if (addToCart) {
+  addToCart.addEventListener("click", () => {
+    // Fetch the existing cart from localStorage or initialize it as an empty array
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    // Add the selected product to the cart
+    cart.push(selectedProduct);
+    localStorage.setItem("cart", JSON.stringify(cart));
 
-notify.innerText = "Added to cart ✔";
-localStorage.setItem("selectedProduct", JSON.stringify(prod));
-
-window.location.href="cart.html";
-
-})
+    // Show a notification
+    notify.innerText = "Added to cart ✔";
+;
+  });
+}
