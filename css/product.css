@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+
+.img{
+    height: 30rem;
+    width:30rem;
+ border-radius: 20px;
+margin-left: 2rem;
+margin-top: 3%;
+/* border: 1px solid #333 ;
+ */}
+ .img-container {
+margin-left: 7rem;
+ }
+ .img-container img{
+
+height: 4rem;
+width: 4rem;
+margin-top: 1rem;
+padding-left: 1rem;
+
+
+ }
+.product-container{
+margin: 2rem;
+margin-left: 6.5rem;
+    height: 40rem;
+    width: 80%;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+}
+.content{
+    position: absolute;
+    top: 12%;
+    left: 49%;
+width: 12rem;
+}
+
+.content h4{
+    color: red;
+}
+.sizes, .colors, .quantity, .sub-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.select-size, .select-color, .select-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.select-size label, .select-color label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.select-size input[type="radio"], .select-color input[type="radio"] {
+    margin-right: 5px;
+}
+
+.select-color span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.color-1 { background-color: red; }
+.color-2 { background-color: green; }
+.color-3 { background-color: blue; }
+.color-4 { background-color: yellow; }
+
+.select-quantity input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.sub-btn .submit {
+    padding: 10px 20px;
+    background-color: #088178;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-btn .submit:hover {
+    background-color: rgb(rgb(4, 122, 53));
+}
+.sizes{
+    margin-left: 2.6rem;
+}
+.colors{
+    margin-left: 4.8rem;
+
+
+
+}
+
+
+
+.img{
+
+    height: 30rem;
+    width: 30rem;
+    margin-left: 4rem;
+}
+.notifi{
+    color: green;
+}
